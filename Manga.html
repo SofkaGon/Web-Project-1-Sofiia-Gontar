@@ -38,24 +38,23 @@ display: table;
 }
     </style>
 </head>
-<body style="background-color: #e7dbff; margin= 0px;">
+<body style="background-color: #e7dbff; margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;">
     <!--navigation bar links-->
     <nav>
-        <div class="nav-item" style="text-decoration: none";><a href="Manga.html" class="nav-item" >Home</a></div>
-        <div class="nav-item"><a href="Details.html"class="nav-item" style="margin: 0%;" >Recomendations</a></div> 
-        <div class="nav-item"><a href="More.html"class="nav-item">Anime</a></div>
+        <div class="nav-item" style="text-decoration: none; padding-top: 0px;padding-bottom: 0px;";><a href="Manga.html"style="padding-top: 28px;padding-bottom: 28px;" class="nav-item" >Home</a></div>
+        <div class="nav-item"style="padding-top: 0px;padding-bottom: 0px;"><a href="Details.html"class="nav-item" style="padding-top: 28px;padding-bottom: 28px;" >Recomendations</a></div> 
+        <div class="nav-item"style="padding-top: 0px;padding-bottom: 0px;"><a style="padding-top: 28px;padding-bottom: 28px;"href="More.html"class="nav-item">Anime</a></div>
     </nav>
     <!--background image on the top of the page-->
-    <figure>
+    <figure style="margin-left: 0px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;">
         <picture>
             <img width="100%" height="120%" src="photos/MANGA (1).png">
         </picture>
     </figure>
     <!--section about intro info-->
-    <section style="background-color: #4d347c;">
-        <br/>
-        <h1 style="font-size:xx-large; color: #ffffff; font-family:Verdana, Geneva, Tahoma, sans-serif;text-align: center; 
-        margin-top: 20px; margin-right: 20px;margin-bottom: 20px;margin-left: 20px; ;">WHAT IS MANGA?</h1>
+    <section style="background-color: #4d347c;margin-top: -8px;">
+        <!--<br/>-->
+        <h1 style=" margin-top: 0px; padding-top: 20px; font-size:xx-large; color: #ffffff; font-family:Verdana, Geneva, Tahoma, sans-serif;text-align: center; margin-right: 20px;margin-bottom: 20px;margin-left: 20px; ;">WHAT IS MANGA?</h1>
         <p style="color:#e7dbff; font-family: 'Tahoma'; padding: 15px 20px; size: 10px;text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <!--section about history-->
@@ -69,17 +68,136 @@ display: table;
                 <!--section about modern times-->
                 <p style="color:#4d347c; font-family: 'Tahoma'; padding: 15px 20px;text-align: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></td>  
                 <!--additional picture-->
-                <th><img width="350" height="300" alt="photo of Osamu Tezuka" src="photos/Osamu_Tezuka_1951_Scan10008-2.jpg"></th>
+                <th><img title="Osamu Tezuka" width="350" height="300" alt="photo of Osamu Tezuka" src="photos/Osamu_Tezuka_1951_Scan10008-2.jpg"></th>
             </tr> 
         </table>
-    
+    <!--pictures that link you to page with more info about them-->
     </section>
     <section style="background-color: #e7dbff;">
         <br/>
-        <table>
-           
+        <table  style="margin: 0px auto;">
+            <td><a href="Details.html"><img src="photos/1.png" style=" margin: auto; padding-left: 25px; padding-top: 10%;padding-right: 25px;padding-bottom: 10%;" width="250" height="400" alt="sailor moon"></a></td>
+            <td><a href="Details.html"><img src="photos/2.png" style="margin: auto; padding-left: 25px; padding-top: 10%;padding-right: 25px;padding-bottom: 10%;" width="250" height="400" alt="one piece"></a></td>
+            <td><a href="Details.html"><img src="photos/3.png" style=" margin: auto; padding-left: 25px; padding-top: 10%;padding-right: 25px;padding-bottom: 10%;" width="250" height="400" alt="demon slayer"></a></td>
         </table>
+    <!--forms about users intrests-->
     </section>
-
+    <h1 style=" margin-top: 0px; padding-top: 20px; font-size:xx-large; color: #4d347c; font-family:Verdana, Geneva, Tahoma, sans-serif;text-align: center; margin-right: 20px;margin-bottom: 20px;margin-left: 20px; ;">TELL US YOUR INTRESTS</h1>
+    <form id="manga-preference-form" method="get">
+        <fieldset style="background-color: #ffffff;;"  form="manga-preference-form" name="manga-preference-form">
+            <legend style="margin-left: 45%;"><b style=" background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma';">WHO ARE YOU?</b></legend>
+                <section style="font-family: 'Tahoma'; margin: auto;margin-left: 45%;margin-right: auto;">
+                    <br/>
+                    <label for="nickname"><i>NICKNAME:</i></label>
+                    <br/>
+                    <br/>
+                    <input style="background-color: #e7dbff;" type="text" id="nickname" name="your nickname" placeholder="Enter your nickname"><br/>
+                    <br/>
+                </section>
+        </fieldset>
+    </form>
+    <!--forms about users favorite genres-->
+    <form  id="manga-preference-form-genres" method="get">
+        <fieldset style="background-color: #ffffff;;"  form="manga-preference-form-genres" name="genres">
+            <legend style="margin-left: 45%;"><b style=" background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma';">FAVORITE GENRES</b></legend>
+                <section style="font-family: 'Tahoma'; margin: auto;margin-left: 30%;margin-right: auto;">
+                    <br/>
+                    <input type="checkbox" id="genre1" name="genre1" value="action">
+                    <label for="genre1"><i style="color: #4d347c;">Action</i></label>
+                    <input type="checkbox" id="genre2" name="genre1" value="comedy">
+                    <label for="genre2"><i style="color: #4d347c;">Comedy</i></label>
+                    <input type="checkbox" id="genre3" name="genre1" value="romance">
+                    <label for="genre3"><i style="color: #4d347c;">Romance</i></label>
+                    <input type="checkbox" id="genre4" name="genre1" value="isekai">
+                    <label for="genre4"><i style="color: #4d347c;">Isekai</i></label>
+                    <input type="checkbox" id="genre5" name="genre1" value="slice of life">
+                    <label for="genre5"><i style="color: #4d347c;">Slice of life</i></label>
+                    <input type="checkbox" id="genre6" name="genre1" value="mystery & thrill">
+                    <label for="genre6"><i style="color: #4d347c;">Mystery & thrill</i></label>
+                    <input type="checkbox" id="genre1" name="genre7" value="sports">
+                    <label for="genre7"><i style="color: #4d347c;">Sports</i></label>
+                    <br/>
+                </section>
+        </fieldset>
+    </form>
+    <!--forms about users favorite mangas-->
+    <form id="manga-preference-form-favorites" method="get">
+        <fieldset style="background-color: #ffffff;;"  form="manga-preference-form-favorites" name="favorites">
+            <legend style="margin-left: 45%;"><b style=" background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma';">FAVORITE MANGA</b></legend>
+                <section style="font-family: 'Tahoma'; margin: auto;margin-left: 45%;margin-right: auto;">
+                    <br/>
+                    <select style="background-color: #e7dbff;" name="favorite manga" id="favorite manga">
+                        <option value="Berserk">Berserk</option>
+                        <option value="Attack on Titan ">Attack on Titan</option>
+                        <option value="Chainsaw Man">Chainsaw Man</option>
+                        <option value="One Piece">One Piece</option>
+                        <option value="Solo Leveling">Solo Leveling</option>
+                        <option value="Tokyo Ghoul">Tokyo Ghoul</option>  
+                        <option value="One Punch-Man">One Punch-Man</option>
+                        <option value="Oyasumi Punpun">Oyasumi Punpun</option>
+                        <option value="Demon Slayer">Demon Slayer</option>  
+                        <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+                        <option value="My Hero Academia">My Hero Academia</option>
+                        <option value="Naruto">Naruto</option>
+                        <option value="Other">Other</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="other"><i>OTHER<sup>*</sup>:</i></label>
+                <br/>
+                <br/>
+                <input style="background-color: #e7dbff;" type="text" id="other" name="other option" placeholder="Enter other favorite manga"><br/>
+            </fieldset>
+    </form>
+    <!--forms about users rating of favorite manga-->
+    <form  id="manga-preference-form-rating" method="get">
+        <fieldset style="background-color: #ffffff;;"  form="manga-preference-form-rating" name="rating">
+            <legend style="margin-left: 45%;"><b style=" background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma';">RATING OF FAVORITE MANGA</b></legend>
+                <section style="font-family: 'Tahoma'; margin: auto;margin-left: 40%;margin-right: auto;">
+                    <br/>
+                    <label for="vol">RATING  0-10:</label>
+                    <input type="number" id="vol" name="vol" min="0" max="10" step="1">
+                    <br/>
+                </section>
+        </fieldset>
+    </form>
+    <br/>
+    <form  id="manga-preference-form-recomendation" method="get">
+        <fieldset style="background-color: #ffffff;;"  form="manga-preference-form-recomendation" name="Recomendations">
+            <legend style="margin-left: 45%;"><b style=" background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma';">SHARE</b></legend>
+                <section style="font-family: 'Tahoma'; margin: auto;margin-left: 40%;margin-right: auto;">
+                    <br/>
+                    <textarea id="about" name="about" rows="10" cols="50" placeholder="Describe your favorite manga and your expiriences while reading it briefly"></textarea>
+                    <br/>
+                </section>
+        </fieldset>
+    </form>
+    <br/>
+    <form  id="submit-button" name="submit" method="get">
+        <section style="font-family: 'Tahoma'; margin: auto;margin-left: 50%;margin-right: auto;">
+            <br/>
+            <input style="background-color: #7667ce; color: #e7dbff;" type="submit" value="Submit">                       
+            <br/>
+        </section>
+    </form>
+    <br/>
+    <br/>
+    <footer style="background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma';">
+                <section style="font-family: 'Tahoma'; margin: auto;margin-left: 45%;margin-right: auto;">
+                    <br/>
+                    
+                        <h3 style="background-color: #4d347c;color:#e7dbff; font-family: 'Tahoma'">LEARN MORE</h3>
+                        <ul style="margin: auto;margin-left: -8%;margin-right: auto;">
+                        <li>CONTACT US</li>
+                        <li>SOURCES</li>
+                        <li>SHARE YOUR THOUGHTS WITH US</li>
+                        </ul>
+                        <br/>
+                        <small style="background-color: #4d347c;color:#e7dbff; margin: auto;margin-left: -8%;margin-right: auto;">
+                            Copyright © 2025 ALL ABOUT MANGA PAGE. All Rights Reserved.
+                        </small>
+                    </footer>
+                </section>
+    </footer>
 </body>
 </html>
